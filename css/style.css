@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ----------------------------------------- Header CSS ----------------------------------------- */
+.header-wrapper{
+    background-color: #ffffff;
+}
+.header-wrapper .navbar-expand-lg .navbar-nav .dropdown-menu{
+    width: 900px;
+    margin-top: 17px;
+    border: 0;
+    padding: 23px 25px 46px;
+    background: #ffffff;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0px 10px 10px #00000024;
+}
+.navbar-nav .nav-link.active:hover{
+    color: #F67366;
+}
+.header-wrapper .navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #F67366;
+}
+.header-wrapper .dropdown-menu .dropdown-ul{
+    list-style-type: none;
+    padding: 0;
+    margin-right: 60px;
+}
+.header-wrapper .dropdown-menu .dropdown-li{
+    display: inline-flex;
+    align-items: center;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: #141414;
+}
+.header-wrapper .navbar-expand-lg{
+    padding: 67px 0 0 0;
+}
+.header-wrapper .navbar-expand-lg .navbar-nav .nav-link{
+    margin: 0 15px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+}
+.header-wrapper .navbar-expand-lg .navbar-collapse{
+    justify-content: center;
+}
+.header-wrapper .navbar-brand, .header-wrapper .navbar-brand span{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28.8px;
+    color: #141414;
+    padding: 0;
+    margin: 0;
+}
+.header-wrapper .navbar-brand span{
+    font-weight: 900;
+    color: #F67366;
+}
+ul.dropdown-ul .company-detail{
+    display: flex;
+    align-items: center;
+}
+ul.dropdown-ul .company-detail .about-wrapper{
+    display: block;
+    margin-left: 20px;
+}
+ul.dropdown-ul .company-detail img{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+ul.dropdown-ul .company-detail .about-wrapper a{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin: 0 0 8px 0;
+    color: #141414;
+    text-decoration: none;
+}
+ul.dropdown-ul .company-detail .about-wrapper a:hover{
+    transition: all 0.3s;
+    color: #F67366;
+}
+ul.dropdown-ul .company-detail .about-wrapper p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #6F6F6F;
+    margin: 8px 0 0 0;
+}
+.header-wrapper .dropdown-menu h6{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    margin: 0 0 21px 0;
+}
+.header-wrapper .dropdown-toggle::after{
+    display: none;
+}
+.header-wrapper .dropdown-toggle img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    padding-left: 8px;
+}
+.header-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    z-index: 99;
+} 
+.check-price-wrapper .common-button, .common-button{
+    background-color: #2C2D5B;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid #2C2D5B;
+    border-radius: 12px;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+ }
+ .header-buttons .common-button:hover, .common-button:hover{
+    color: #2C2D5B;
+    border: 1px solid #2C2D5B;
+    background-color: transparent;
+    text-decoration: none;
+ }
+ .common-button-outline{
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid #2C2D5B;
+    border-radius: 12px;
+    color: #2C2D5B;
+    padding: 20px 40px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+ }
+ .common-button-outline:hover{
+    color: #ffffff;
+    border: 1px solid #2C2D5B;
+    background-color: #2C2D5B;
+    text-decoration: none;
+ }
+.header-wrapper .newsroom-block .news-media{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    margin: 15px 0;
+    color: #6F6F6F;
+    display: block;
+}
+.header-wrapper .newsroom-block a{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #F67366;
+    text-decoration: none !important;
+    display: block;
+}
+.header-wrapper .newsroom-block a>img{
+    padding-left: 3px;
+}
+.header-wrapper .newsroom-block a:nth-child(2){
+    display: flex;
+}
+.mb-open{
+    display: none;
+}
+.mb-show{
+    display: none;
+}
+.mb-arrow-show{
+    display: none;
+}
+/* ----------------------------------------- Header CSS End ------------------------------------ */
+
+/* ------------------------------ Banner Section -------------------------- */
+.banner-section{
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 87px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    width: 1290px;
+    position: relative;
+    z-index: 1;
+}
+.banner-left-content{
+    width: 100%;
+    max-width: 596px;
+    position: relative;
+}
+.banner-left-content h1{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.banner-wrapper{
+    position: relative;
+}
+.banner-left-content p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 50px;
+}
+.banner-left-content a.common-button{
+    padding: 20px 40px !important;
+}
+.banner-left-content h1 span{
+    font-weight: 700 !important;
+    color: #F67366 !important;
+}
+.banner-right-content img{
+    max-width: 100%;
+}
+.pop-up-video{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 30px;
+    gap: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none !important;
+    border-color: transparent !important;
+}
+.pop-up-video:active{
+    border: 0px !important;
+    border-color: transparent !important;
+}
+.pop-up-video img{
+    box-shadow: 0px 0px 25px 0px #97979740;
+    background-color: #ffffff;
+    padding: 17px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.pop-up-video span{
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 17px;
+    color: #2C2D5B;
+}
+.modal-content, .modal-content .modal-header{
+    background-color: transparent;
+    border: none;
+}
+.modal-body iframe{
+    width: 768px;
+    height: 315px;
+}
+.modal-header .btn-close:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.modal-header .btn-close{
+    background-image: url(../images/banner-images/close-icon.png);
+    opacity: 1;
+    font-size: 24px;
+}
+
+/* ------------------------------ Banner Section End ---------------------- */
+
+
+/* ------------------------------ Check Price ----------------------------- */
+.check-price-section{
+    margin: 100px 0 88px;
+}
+.check-price-wrapper{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px 0px #97979733;
+    padding: 51px 36px 36px;
+    border-radius: 30px;
+}
+.check-price-wrapper ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.check-price-wrapper ul li input{
+    padding: 24px 0 24px 42px;
+    border: 1px solid #979797;
+    border-radius: 12px;
+    outline: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #979797;
+    width: 250px;
+}
+.check-price-wrapper ul li input::placeholder{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #979797;
+}
+.check-price-wrapper ul li{
+    position: relative;
+}
+.check-price-wrapper ul li span{
+    position: absolute;
+    content: "";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #979797;
+    top: -14px;
+    left: 14px;
+    padding: 8px;
+    background-color: #ffffff;
+}
+.check-price-wrapper ul li img{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    transform: translate(16px, 26px);
+}
+.check-price-wrapper .common-button{
+   padding: 25px 88px;
+}
+/* ------------------------------ Check Price End ----------------------------- */
+
+/* ------------------------------ Footer CSS ------------------------------ */
+.footer-block{
+    background-color: #2C2D5B;
+    padding: 50px 0;
+}
+.footer-first-col-content{
+    width: 100%;
+    max-width: 220px;
+}
+.footer-first-col-content h3 a{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #F67366;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: block;
+}
+.footer-first-col-content h3 a>span{
+    font-weight: 900 !important;
+    color: #ffffff !important;
+}
+.footer-first-col-content p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #ffffff;
+}
+.footer-top-heading{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+ul.footer-ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    line-height: 24px;
+}
+.footer-ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #F67366, #F67366 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: all 0.3s;
+}
+.footer-ul li a:hover {
+    background-position: 0%;
+}
+.footer-fourth-col-content ul{
+    column-gap: 18px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+h3.footer-copyright-text{
+    border-top: 2px solid #979797;
+    padding: 0;
+    margin: 70px 0 0;
+    padding-top: 30px;
+}
+h3.footer-copyright-text a{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+h3.footer-copyright-text a span{
+    color: #F67366 !important;
+    font-weight: 900 !important;
+}
+h3.footer-copyright-text a .span2{
+    font-weight: 900 !important;
+    color: #ffffff !important;
+}
+/* ------------------------------ Footer CSS End -------------------------- */
+
+/* ------------------------------ Media Query For Laptop Devices ---------- */
+@media(min-width: 1440px){
+    .banner-section::after{
+        position: absolute;
+        content: url(../images/banner-images/Banner-Left-Image.png);
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+        min-height: 816px;
+        background-size: cover;
+        top: -13%;
+        left: -10%;
+        z-index: -1;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    .banner-section{
+        width: 100%;
+        max-width: 100%;
+    }
+    .modal-body iframe{
+        width: 100%;
+    }
+}
+/* ------------------------------ Media Query End ------------------------- */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .banner-section{
+        width: 100%;
+        max-width: 100%;
+    }
+    .header-wrapper .navbar .container-fluid{
+        padding: 0;
+    }
+    .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
+        margin: 0 8px;
+    }
+    .header-wrapper .navbar-expand-lg .navbar-nav .dropdown-menu{
+        width: 700px;
+    }
+    .common-button-outline{
+        padding: 20px;
+    }
+    .modal-body iframe{
+        width: 100%;
+    }
+}
+/* ------------------------------ Media Query For Mobile Devices ---------- */
+
+/* ------------------------------ Media Query For Tablet Devices ---------- */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .banner-section{
+        width: 100%;
+        max-width: 100%;
+    }
+    .header-buttons.mb-close{
+        display: none !important;
+    }
+    .header-buttons.mb-open{
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .header-wrapper .navbar-expand-lg .navbar-nav .nav-link {
+        margin: 15px 0;
+    }
+    .header-wrapper .navbar-expand-lg .navbar-collapse{
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .header-wrapper .navbar-expand-lg .navbar-nav .dropdown-menu{
+        width: 100%;
+        max-width: 100%;
+    }
+    .modal-body iframe{
+        width: 100%;
+    }
+    .check-price-wrapper ul {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-third-col-content, .footer-fourth-col-content{
+        margin-top: 30px;
+    }
+    .navbar-toggler:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .header-wrapper .navbar-expand-lg{
+        padding-bottom: 20px;
+    }
+}
+/* ------------------------------ Media Query End ------------------------- */
+
+
+
+
+/* ------------------------------ Media Query For Mobile Devices ---------- */
+@media only screen and (max-width: 767px) {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .header-wrapper .navbar-expand-lg .navbar-nav .dropdown-menu{
+        max-width: 100%;
+        width: 100%;
+    }
+    .banner-section{
+        width: 100%;
+    }
+    .header-buttons.mb-open{
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .header-wrapper .dropdown-menu.show{
+        padding: 15px 15px 20px !important;
+        height: 450px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background: #f67366 !important;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        margin-top: 0px !important;
+    }
+    .header-wrapper .navbar-expand-lg .navbar-collapse{
+        margin-top: 20px;
+        height: 560px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-bottom: 20px;
+    }
+    .header-wrapper .navbar .container-fluid{
+        padding: 0;
+    }
+    .header-wrapper .dropdown-menu h6{
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .header-wrapper .dropdown-menu .dropdown-ul{
+        margin: 0;
+    }
+    ul.dropdown-ul .company-detail .about-wrapper a{
+        color: #ffffff;
+        text-decoration: underline;
+    }
+    ul.dropdown-ul .company-detail .about-wrapper p{
+        color: #141414;
+    }
+    .header-wrapper .newsroom-block a, .header-wrapper .newsroom-block .news-media{
+        color: #ffffff;
+        text-decoration: underline !important;
+        display: flex;
+        gap: 8px;
+    }
+    .newsroom-block{
+        margin-top: 20px;
+    }
+    .mb-arrow-close{
+        display: none;
+    }
+    .mb-arrow-show{
+        display: block;
+    }
+    .header-buttons.mb-close{
+        display: none;
+    }
+    .join-now-block{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+    }
+    .banner-left-content a.common-button {
+        padding: 20px 40px !important;
+        display: flex;
+        align-items: center;
+    }
+    .pop-up-video{
+        margin: 0;
+        padding: 0;
+    }
+    .footer-first-col-content{
+        max-width: 100%;
+    }
+    .banner-right-content img{
+        max-width: 100%;
+        min-height: 100%;
+        margin-top: 40px;
+    }
+    .header-wrapper .navbar-expand-lg .navbar-nav .nav-link{
+        margin: 15px 0;
+    }
+    .footer-wrp{
+        row-gap: 50px;
+    }
+    h3.footer-copyright-text{
+        margin-top: 20px;
+    }
+    iframe{
+        width: 100%;
+        max-width: 100%;
+    }
+    .navbar-toggler:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .check-price-wrapper ul {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header-wrapper .navbar-expand-lg{
+        padding-bottom: 20px
+    }
+}
+@media(min-width: 575px) and (max-width: 767px) {
+    .newsroom-block{
+        margin-top: 0;
+    }
+}
+@media(max-width: 354px) {
+    .pop-up-video{
+        margin-top: 30px;
+    }
+}
+/* ------------------------------ Media Query End ------------------------- */
